@@ -1,0 +1,377 @@
+/* Variables de color */
+:root {
+    --fondo: #111111;
+    --superficie: #1a1a1a;
+    --superficie-secundaria: #222222;
+    --borde: #333333;
+    --acento: #c94b45;
+    --texto: #ffffff;
+    --texto-secundario: #dddddd;
+}
+
+/* Estilos generales */
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: var(--superficie);
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 3px solid var(--acento);
+}
+
+/* Título principal */
+header h1 {
+    margin: 0;
+    font-size: clamp(34px, 6vw, 52px);
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Subtítulos de la cabecera */
+header p:first-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 0;
+}
+
+header p:last-of-type {
+    color: var(--texto-secundario);
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Enlaces del menú */
+nav a {
+    color: var(--texto);
+    text-decoration: none;
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid var(--borde);
+    background-color: var(--superficie-secundaria);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--acento);
+    border-color: var(--acento);
+}
+
+nav a.activo {
+    background-color: var(--acento);
+    border-color: var(--acento);
+}
+
+/* Contenido principal */
+main {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* Secciones principales */
+.seccion {
+    margin-bottom: 40px;
+    padding: 15px 25px 25px;
+    background-color: var(--superficie);
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+}
+
+/* Títulos de las secciones */
+.seccion h2 {
+    color: var(--acento);
+    font-size: clamp(24px, 3vw, 30px);
+    margin-bottom: 15px;
+    border-left: 5px solid var(--acento);
+    padding-left: 12px;
+}
+
+ /* Párrafos de las secciones */
+.seccion p {
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--texto-secundario);
+}
+
+/* Secciones de fuentes */
+.seccion.fuentes {
+    padding: 15px 25px;
+    margin-bottom: 25px;
+    background-color: var(--superficie-secundaria);
+}
+
+.seccion.fuentes h2 {
+    color: var(--texto);
+    font-size: 20px;
+    border-left: none;
+    border-bottom: 1px solid var(--acento);
+    padding: 0 0 8px;
+    margin: 0 0 12px;
+}
+
+.seccion.fuentes ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.seccion.fuentes li {
+    margin-bottom: 5px;
+}
+
+.seccion.fuentes a {
+    font-weight: normal;
+}
+
+/* Imagen principal */
+.imagen-principal {
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.imagen-principal img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+}
+
+/* Imagen del circuito */
+.imagen-circuito {
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+.imagen-circuito img {
+    display: block;
+    width: 100%;
+    max-width: 850px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    filter: invert(1) hue-rotate(180deg);
+}
+
+/* Lista de datos */
+.seccion ul {
+    margin: 15px 0 0;
+    padding-left: 25px;
+}
+
+.seccion li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.seccion li::marker {
+    color: var(--acento);
+}
+
+/* Listas sin puntos */
+.lista-sin-puntos {
+    list-style: none;
+    padding-left: 0;
+}
+
+.lista-sin-puntos li {
+    padding: 8px 0 8px 15px;
+    margin-bottom: 8px;
+    border-left: 3px solid var(--acento);
+}
+
+.seccion li strong {
+    color: var(--texto);
+}
+
+/* Enlaces externos */
+.seccion a {
+    color: var(--acento);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.seccion a:hover {
+    color: var(--texto);
+    text-decoration: underline;
+}
+
+/* Enlace de la fuente de la imagen */
+.imagen-circuito a {
+    color: var(--acento);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Pie de las imágenes */
+figcaption {
+    margin-top: 10px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.imagen-circuito a:hover {
+    color: var(--texto);
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    background-color: var(--superficie);
+    text-align: center;
+    padding: 25px 20px;
+    border-top: 1px solid var(--borde);
+}
+
+footer p {
+    margin: 5px 0;
+    color: #999999;
+    font-size: 14px;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: var(--superficie-secundaria);
+    color: var(--texto);
+    padding: 14px 12px;
+    text-align: left;
+    border-bottom: 2px solid var(--acento);
+    font-weight: bold;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--borde);
+    color: var(--texto-secundario);
+}
+
+tbody tr:hover {
+    background-color: var(--superficie-secundaria);
+}
+
+/* Tablas adaptables */
+.tabla-responsive {
+    overflow-x: auto;
+}
+
+/* Alineación de la tabla de resultados */
+.tabla-resultados th:nth-child(1),
+.tabla-resultados th:nth-child(2),
+.tabla-resultados th:nth-child(5),
+.tabla-resultados th:nth-child(7),
+.tabla-resultados td:nth-child(1),
+.tabla-resultados td:nth-child(2),
+.tabla-resultados td:nth-child(5),
+.tabla-resultados td:nth-child(7) {
+    text-align: center;
+}
+
+#ganador {
+    background-color: var(--superficie-secundaria);
+}
+
+#ganador td {
+    color: var(--texto);
+    font-weight: bold;
+}
+
+/* Formulario */
+form p {
+    margin: 15px 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 6px;
+    color: var(--texto);
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--texto);
+    background-color: var(--superficie-secundaria);
+    border: 1px solid var(--borde);
+    border-radius: 4px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+/* Botón del formulario */
+form button {
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--texto);
+    background-color: var(--acento);
+    border: 1px solid var(--acento);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #a83d39;
+    border-color: #a83d39;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    /* Espaciado de las secciones en pantallas pequeñas */
+    .seccion {
+        padding: 20px;
+    }
+      
+    /* Lista en pantallas pequeñas */
+    .seccion ul {
+        padding-left: 20px;
+    }
+}
