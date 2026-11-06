@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>F1 Madrid 2026 - Gran Premio de España</title>
+        <link>https://inecheverria-dev.github.io/inecheverria-f1-madrid-2026/tarea3/</link>
+        <description>Últimas novedades sobre el Gran Premio de España de Fórmula 1 2026.</description>
+        <language>es-es</language>
+
+        <item>
+            <title>Descubre el circuito Madring</title>
+            <link>https://inecheverria-dev.github.io/inecheverria-f1-madrid-2026/tarea3/circuito.html</link>
+            <description>Conoce las características del circuito Madring, su trazado, longitud y curvas.</description>
+            <pubDate>Fri, 06 Nov 2026 10:00:00 +0100</pubDate>
+            <guid>https://inecheverria-dev.github.io/inecheverria-f1-madrid-2026/tarea3/circuito.html</guid>
+        </item>
+
+        <item>
+            <title>Consulta los resultados del Gran Premio</title>
+            <link>https://inecheverria-dev.github.io/inecheverria-f1-madrid-2026/tarea3/resultados.html</link>
+            <description>Consulta la clasificación y los resultados de los pilotos del Gran Premio de España.</description>
+            <pubDate>Fri, 06 Nov 2026 10:05:00 +0100</pubDate>
+            <guid>https://inecheverria-dev.github.io/inecheverria-f1-madrid-2026/tarea3/resultados.html</guid>
+        </item>
+
+    </channel>
+</rss>
